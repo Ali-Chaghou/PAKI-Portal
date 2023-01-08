@@ -1,5 +1,8 @@
 import "./Footer.css";
 
+import { Link, NavLink } from "react-router-dom";
+
+
 const Footer = () => {
   return (
     <footer>
@@ -7,8 +10,14 @@ const Footer = () => {
         © Copyright <span>Faber Group</span> 2023
       </p>
       <div>
-        <a>Impressum</a>
-        <a>Datenschutz- und Cookie-Erklärung</a>
+        <ul>
+            <li>
+                <NavLink to="/impressum">Impressum</NavLink>
+            </li>
+            <li>
+                <NavLink to="/datenschutz-UndCookies-Erklärung">Datenschutz-und Cookies-Erklärung</NavLink>
+            </li>
+        </ul>
       </div>
     </footer>
   );
