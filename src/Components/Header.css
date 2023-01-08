@@ -1,0 +1,258 @@
+header {
+    color: white;
+    padding: 25px 80px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /*
+    Falls wir noch ein Background Image benötigen...
+
+
+    text-align: center;
+    min-height: 100vh;
+    background-image: url("../Images/header-bg.jpg");
+    background-size: cover;
+  */
+  
+  nav ul {
+    max-width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  #closeBtn,
+  #burgerIcon {
+    display: none;
+  }
+  
+  nav li {
+    list-style: none;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .active::after {
+    width: 40px;
+    height: 1px;
+    margin: 6px auto 0;
+    background: #e8c300;
+    border-radius: 2px;
+    content: "";
+    display: block;
+  }
+  
+  nav img {
+    height: 15vh;
+  }
+  
+  header h1 {
+    font-size: 46px;
+    margin-top: 40px;
+    color: #333;
+  }
+  
+  header h1 span {
+    display: block;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.5em;
+    margin-bottom: 5px;
+  }
+  
+  .buttonRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .linkButtonStyle {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  
+  .linkButtonStyle:nth-of-type(1) {
+    background-color: #e8c300;
+  }
+  
+  .linkButtonStyle:nth-of-type(2) {
+    border: 1px solid hsla(0, 0%, 100%, 0.5);
+  }
+  
+  .btnDown {
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btnDownImg {
+    height: 60px;
+    width: 60px;
+  }
+
+  @media (max-width: 1310px) {
+    nav img {
+        height: 10vh;
+      }
+  }
+  
+
+  @media (max-width: 1160px) {
+    header h1 {
+      font-size: 64px;
+    }
+    nav img {
+        height: 10vh;
+      }
+  }
+
+  @media (max-width: 1050px) {
+    nav img {
+        height: 7vh;
+      }
+  }
+
+  @media (max-width: 900px) {
+    nav img {
+        height: 5vh;
+      }
+  }
+  @media (max-width: 800px) {
+    nav img {
+        height: 3.5vh;
+      }
+  }
+  
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 64px;
+    }
+    nav ul li a{
+        font-size: 13px;
+    }
+    nav img {
+        height: 2.5vh;
+      }
+  }
+
+  @media (max-width: 645px) {
+    nav ul li a{
+        font-size: 12px;
+    }
+    nav img {
+        height: 1.5vh;
+      }
+    header h1 {
+      font-size: 48px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    nav ul li a{
+        font-size: 10px;
+    }
+    nav img {
+        height: 2vh;
+      }
+    header h1 {
+      font-size: 32px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    nav ul li a{
+        font-size: 10px;
+    }
+    header {
+        padding: 5px 20px 20px ;
+    }  
+    header h1 {
+      font-size: 28px;
+    }
+  }
+
+
+  @media (max-width: 462px) {
+    nav ul li a{
+        font-size: 9px;
+    }
+    header {
+        padding: 5px 20px 20px ;
+    }  
+    header h1 {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 440px) {
+    
+    nav ul li a{
+        font-size: 8px;
+    }
+    nav ul {
+        gap: 10px;
+    }
+    header {
+        padding: 5px 20px 20px ;
+    }  
+    header h1 {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 380px) {
+
+    header {
+        padding: 5px 20px 20px ;
+    }
+    header h1 {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 336px) {
+    nav ul {
+        gap: 2.5px;
+    }
+
+    header h1 {
+      font-size: 16px;
+    }
+    header {
+        padding: 5px 20px 20px ;
+      }
+  }
+
+  @media (max-width: 320px) {
+
+    nav ul {
+        gap: 2.5px;
+    }
+    header {
+        padding: 5px 20px 20px ;
+      }
+    header h1 {
+      font-size: 16px;
+    }
+  }
