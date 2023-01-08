@@ -4,13 +4,14 @@ import './App.css';
 import { BrowserRouter} from "react-router-dom";
 
 //Components
+import Header from './Components/Header';
 import Footer from './Components/Footer';
 
 function App() {
   return (
     <BrowserRouter>
         <div className="App">
-
+          <Header/>
           <Footer/>
         </div>
     </BrowserRouter>
