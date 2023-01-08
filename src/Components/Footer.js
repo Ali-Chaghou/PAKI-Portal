@@ -7,8 +7,8 @@ const Footer = () => {
         © Copyright <span>Faber Group</span> 2023
       </p>
       <div>
-        <a href="#">Impressum</a>
-        <a href="#">Datenschutz- und Cookie-Erklärung</a>
+        <a>Impressum</a>
+        <a>Datenschutz- und Cookie-Erklärung</a>
       </div>
     </footer>
   );
